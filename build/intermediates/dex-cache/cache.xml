@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Android\sdk1\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="C:\OpenCVProjects\ROAD\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.1-6d880d56bd3dda6779b1038cf2c377f034faf317.jar" />
+    </item>
+    <item
+        jar="C:\OpenCVProjects\RoadTest\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="C:\OpenCVProjects\RoadTest\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.1-62c5ba2ea503800d14b328fa30498a4353bec970.jar" />
+    </item>
+    <item
+        jar="C:\OpenCVProjects\ROAD\app\build\intermediates\exploded-aar\ROAD\openCVLibrary300\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="667204c07b018cc44a1c0173c1af730cb4e8b073">
+        <dex dex="C:\OpenCVProjects\ROAD\app\build\intermediates\pre-dexed\debug\classes-1d812a58b4e1bff962c6fb8d848cc9c875bc95c6.jar" />
+    </item>
+    <item
+        jar="C:\OpenCVProjects\ROAD\app\build\intermediates\exploded-aar\ROAD\tess-two\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="98e9ecb29462c1977a9ae6b043874fec55f8874c">
+        <dex dex="C:\OpenCVProjects\ROAD\app\build\intermediates\pre-dexed\debug\classes-2a624eb5ce88e65c8d6d38281a6057e0b4f37ca5.jar" />
+    </item>
+    <item
+        jar="C:\OpenCVProjects\ROAD\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="C:\OpenCVProjects\ROAD\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.1-c7c235dbb5eb454babd96d2b20393c519b233f7d.jar" />
+    </item>
+    <item
+        jar="C:\OpenCVProjects\RoadTest\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="C:\OpenCVProjects\RoadTest\app\build\intermediates\pre-dexed\debug\classes-5536b920890c956177c9152f229aec8ffa11942c.jar" />
+    </item>
+    <item
+        jar="C:\OpenCVProjects\ROAD\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="C:\OpenCVProjects\ROAD\app\build\intermediates\pre-dexed\debug\classes-ad5707da464ad1e1ed42fe8ab011909f965c6e7b.jar" />
+    </item>
+    <item
+        jar="C:\OpenCVProjects\RoadTest\app\build\intermediates\exploded-aar\RoadTest\tess-two\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="2d5d82c681364059cee4e707db89caaaafc83384">
+        <dex dex="C:\OpenCVProjects\RoadTest\app\build\intermediates\pre-dexed\debug\classes-c9b38d2a95ba4c5b6494bae2af2273eba526408f.jar" />
+    </item>
+    <item
+        jar="C:\OpenCVProjects\RoadTest\app\build\intermediates\exploded-aar\RoadTest\openCVLibrary300\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="fb14fbc27a0d0977fafe827a711c4c594aef723e">
+        <dex dex="C:\OpenCVProjects\RoadTest\app\build\intermediates\pre-dexed\debug\classes-0abe5720fc8e9ef18d29860334a128faa024fb68.jar" />
+    </item>
+    <item
+        jar="C:\OpenCVProjects\RoadTest\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="C:\OpenCVProjects\RoadTest\app\build\intermediates\pre-dexed\debug\classes-e7e9bfc8500883f464b1ba1a9e59ebe6e4207483.jar" />
+    </item>
+    <item
+        jar="C:\OpenCVProjects\ROAD\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="C:\OpenCVProjects\ROAD\app\build\intermediates\pre-dexed\debug\classes-d379cf698fdc779635525ae4766fb41d6891f6c1.jar" />
+    </item>
+
+</items>
