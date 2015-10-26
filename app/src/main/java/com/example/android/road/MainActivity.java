@@ -14,11 +14,11 @@ import android.provider.MediaStore;
 import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.SurfaceView;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -142,7 +142,10 @@ public class MainActivity extends AppCompatActivity implements CameraBridgeViewB
         //To display the result recognised by tesserect
         TextView field = (TextView)findViewById(R.id.field);
 
-
+        /*
+        //Removed Now the ROI can be controlled using Volume Button
+        //Buttons to modify ROI
+        //
         Button incrementButton = (Button)findViewById(R.id.incrmentButton);
         incrementButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -159,6 +162,7 @@ public class MainActivity extends AppCompatActivity implements CameraBridgeViewB
                 anyValue++;
             }
         });
+        */
 
         bClickImage = (ImageButton)findViewById(R.id.bClickImage);
         bClickImage.setOnClickListener(new View.OnClickListener() {
@@ -172,6 +176,7 @@ public class MainActivity extends AppCompatActivity implements CameraBridgeViewB
                     imageTaken = false;
             }
         });
+
 
 
 
@@ -234,10 +239,12 @@ public class MainActivity extends AppCompatActivity implements CameraBridgeViewB
         Mat rgba = inputFrame.rgba();
         Size sizeRgba = rgba.size();
 
-        Mat rgbaInnerWindow;  // inner window to select region of interest
+        Mat rgbaInnerWindow = rgba.submat(25, 50, 25, 50);  // inner window to select region of interest
 
         int rows = (int) sizeRgba.height;
         int cols = (int) sizeRgba.width;
+        int screenWidth = mOpenCvCameraView.getWidth();
+        int screenHeight = mOpenCvCameraView.getHeight();
 
         int left = cols / anyValue;
         int top = rows / anyValue;
@@ -245,9 +252,12 @@ public class MainActivity extends AppCompatActivity implements CameraBridgeViewB
         int width = cols * 3/anyValue;
         int height = rows * 3/anyValue;
 
-        rgbaInnerWindow = rgba.submat(top, top+height, left, left+width);
+        if(width <= screenWidth && height <= screenHeight){
+            rgbaInnerWindow = rgba.submat(top, top+height, left, left+width);
 
+        }
         imageProcessor(rgbaInnerWindow);
+
 
 
         if(imageTaken == true){
@@ -422,5 +432,22 @@ public class MainActivity extends AppCompatActivity implements CameraBridgeViewB
     @Override
     public void onInit(int status) {
 
+    }
+
+    //To select the area of ROI using volume buttons
+    @Override
+    public boolean dispatchKeyEvent(KeyEvent event) {
+        int keyCode = event.getKeyCode();
+        switch (keyCode) {
+            case KeyEvent.KEYCODE_VOLUME_UP:
+                if (anyValue > 5)
+                 anyValue--;
+                return true;
+            case KeyEvent.KEYCODE_VOLUME_DOWN:
+                anyValue++;
+                return true;
+            default:
+                return super.dispatchKeyEvent(event);
+        }
     }
 }

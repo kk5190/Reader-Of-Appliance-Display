@@ -33,6 +33,7 @@
         android:layout_gravity="center"
         android:text="R.O.A.D" />
 
+    <!--
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
@@ -48,5 +49,6 @@
         android:text="-"
         android:id="@+id/decrementButton"
         android:layout_gravity="left|bottom" />
+        -->
 
 </FrameLayout>
